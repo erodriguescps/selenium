@@ -1,0 +1,23 @@
+#Imports
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+#from zipfile import ZipFile, ZIP_DEFLATED
+#from shutil import make_archive
+from selenium import webdriver
+from datetime import timedelta, date, datetime
+#from time import sleep
+import pandas as pd
+#import urllib.request
+import openpyxl
+import warnings
+import os
+warnings.simplefilter("ignore") #Ignora os avisos
+
+
+#pip install openpyxl
+#Pip install pandas
+#Pip install selenium
+#pip install webdriver_manager
