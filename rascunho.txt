@@ -21,3 +21,16 @@ warnings.simplefilter("ignore") #Ignora os avisos
 #Pip install pandas
 #Pip install selenium
 #pip install webdriver_manager
+
+options = webdriver.ChromeOptions()
+download_path = r"C:\Users\user\Desktop\download_path"
+
+options.add_experimental_option("prefs",{
+    "download.default_directory": download_path,
+    "download.prompt_for_download": False,
+    "download.directory_upgrade": True,
+    "safebrowsing.enabled":True,
+    "plugins.always_open_pdf_externally": True })
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
+driver.get('https://web.whatsapp.com/') #abre o site Whatsapp Web
